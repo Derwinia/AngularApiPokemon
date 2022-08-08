@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Demo2Component implements OnInit {
 
+  prop1 : string = "Arthur Cuillère !"
+  prop2 : number = 12.4745
+  prop3 : Date = new Date()
+
+  eur : number = 1000000
+
   constructor() { }
 
   ngOnInit(): void {

@@ -9,6 +9,8 @@ import { Demo2Component } from './demo/demo2/demo2.component';
 import { Demo3Component } from './demo/demo3/demo3.component';
 import { FormsModule } from '@angular/forms';
 import { DemoComponent } from './demo/demo.component';
+import { NavComponent } from './nav/nav.component';
+import { EurtobtcPipe } from './shared/eurtobtc.pipe';
 
 
 
@@ -20,7 +22,9 @@ import { DemoComponent } from './demo/demo.component';
     Demo1Component,
     Demo2Component,
     Demo3Component,
-    DemoComponent
+    DemoComponent,
+    NavComponent,
+    EurtobtcPipe
   ],
   imports: [
     BrowserModule,
