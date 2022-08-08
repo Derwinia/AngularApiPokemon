@@ -11,6 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { DemoComponent } from './demo/demo.component';
 import { NavComponent } from './nav/nav.component';
 import { EurtobtcPipe } from './shared/eurtobtc.pipe';
+import { ExercicesComponent } from './exercices/exercices.component';
+import { Exo1Component } from './exercices/exo1/exo1.component';
+import { TotimePipe } from './shared/totime.pipe';
 
 
 
@@ -24,7 +27,10 @@ import { EurtobtcPipe } from './shared/eurtobtc.pipe';
     Demo3Component,
     DemoComponent,
     NavComponent,
-    EurtobtcPipe
+    EurtobtcPipe,
+    ExercicesComponent,
+    Exo1Component,
+    TotimePipe
   ],
   imports: [
     BrowserModule,
