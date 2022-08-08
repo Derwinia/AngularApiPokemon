@@ -1,0 +1,13 @@
+<h3>Bindings</h3>
+<p>Salut {{ myprop }}</p>
+<!-- Binding One Way : Lecture de propriété -->
+
+<input type="text" [(ngModel)]="myprop">
+<!-- Binding Two ways : lecture et écriture de propriété EN DIRECT -->
+
+<br />
+<button (click)="changeProp('bidule')" [disabled]="switchEnabled()" >Déclenche ma méthode</button>
+<!-- Event Binding => (event)="methode()"
+     Attribute Binding => [attribut]="expression booléenne"
+-->
+
