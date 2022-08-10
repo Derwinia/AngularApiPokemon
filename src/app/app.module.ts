@@ -15,6 +15,8 @@ import { ExercicesComponent } from './exercices/exercices.component';
 import { Exo1Component } from './exercices/exo1/exo1.component';
 import { TotimePipe } from './shared/totime.pipe';
 import { HighlightDirective } from './shared/highlight.directive';
+import { Demo4Component } from './demo/demo4/demo4.component';
+import { EnfantComponent } from './demo/demo4/enfant/enfant.component';
 
 
 
@@ -32,7 +34,9 @@ import { HighlightDirective } from './shared/highlight.directive';
     ExercicesComponent,
     Exo1Component,
     TotimePipe,
-    HighlightDirective
+    HighlightDirective,
+    Demo4Component,
+    EnfantComponent
   ],
   imports: [
     BrowserModule,

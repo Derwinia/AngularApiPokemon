@@ -1,0 +1,19 @@
+<p>demo4 works!</p>
+<hr />
+<app-enfant [fromParent]="myProp" [numberFromParent]="myProp2"
+  (messageEvent)="receiveMessage($event)"
+>
+  <ul>
+    <li>c#</li>
+    <li>Javascript</li>
+    <li>Angular</li>
+    <li>TypeScript</li>
+  </ul>
+</app-enfant>
+
+<p>
+  <input [(ngModel)]="myProp" />
+  <button (click)="modifValeur()">click</button>
+</p>
+
+<h4>Message venant de l'enfant : {{messageFromChildren}}</h4>
