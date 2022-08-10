@@ -14,6 +14,7 @@ import { EurtobtcPipe } from './shared/eurtobtc.pipe';
 import { ExercicesComponent } from './exercices/exercices.component';
 import { Exo1Component } from './exercices/exo1/exo1.component';
 import { TotimePipe } from './shared/totime.pipe';
+import { HighlightDirective } from './shared/highlight.directive';
 
 
 
@@ -30,7 +31,8 @@ import { TotimePipe } from './shared/totime.pipe';
     EurtobtcPipe,
     ExercicesComponent,
     Exo1Component,
-    TotimePipe
+    TotimePipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

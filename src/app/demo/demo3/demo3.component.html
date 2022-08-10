@@ -1,1 +1,26 @@
-<p>demo3 works!</p>
+<h3>Directives</h3>
+<h4>NgIf</h4>
+
+<div style="border : 1px black solid;">
+  <p style="background-color : lightgrey; cursor : pointer;" (click)="switchVisible()">
+    Cliquez ici
+  </p>
+  <p *ngIf="isVisible" appHighlight>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis velit facilis veniam consequuntur excepturi! Odit, ex enim. Voluptatibus accusamus vero, mollitia corrupti quam explicabo, cum perferendis inventore obcaecati eaque nobis?</p>
+</div>
+<hr />
+<h4>NgFor</h4>
+
+<ul>
+  <li appHighlight *ngFor="let s of liste; let i = index; let pair = even;">
+   {{i}} - <span [ngClass]="{'maClasse' : pair}">{{s}}</span>
+  </li>
+</ul>
+
+<hr />
+<input [(ngModel)]="maValeur" />
+<div [ngSwitch]="maValeur">
+  <p *ngSwitchCase="1">Carmélide</p>
+  <p *ngSwitchCase="2">Logres</p>
+  <p *ngSwitchCase="3">Vannes</p>
+  <p *ngSwitchDefault>Entrez 1 2 ou 3</p>
+</div>

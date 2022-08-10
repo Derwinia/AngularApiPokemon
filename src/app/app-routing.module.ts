@@ -6,12 +6,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Demo2Component } from './demo/demo2/demo2.component';
 import { ExercicesComponent } from './exercices/exercices.component';
+import { Demo3Component } from './demo/demo3/demo3.component';
 
 const routes: Routes = [
   {path : 'home', component : HomeComponent},
   {path : 'demo', component : DemoComponent, children : [
     {path : 'demo1', component : Demo1Component},
     {path : 'demo2', component : Demo2Component},
+    {path : 'demo3', component : Demo3Component},
   ]},
   {path : 'exercice', component : ExercicesComponent, children :[
     {path : 'exo1', component : Exo1Component}

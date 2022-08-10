@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Demo3Component implements OnInit {
 
+  isVisible : boolean = false
+
+  liste : string[] = ["Arthur", "Perceval", "Merlin", "Leodagan"]
+
+  maValeur! : string
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  switchVisible() {
+    this.isVisible = !this.isVisible
   }
 
 }
