@@ -1,4 +1,4 @@
-<a routerLink="home">Home</a>
+<!-- <a routerLink="home">Home</a>
 
 <ul> Démos
   <li><a routerLink="demo/demo1">Demo Bindings</a></li>
@@ -8,4 +8,19 @@
 
 <ul>Exos
   <li><a routerLink="exercice/exo1">Chronomètre</a></li>
+</ul> -->
+
+
+<ul>
+  <li *ngFor="let lien of mesLiens; let i = index;">
+    <a [routerLink]="lien.url"
+       [ngClass]="{category : lien.children}"
+       (click)="toggleChildrenVisible(i)"
+    >{{lien.title}}</a>
+    <ul *ngIf="lien.children && lien.isChildrenVisible">
+      <li *ngFor="let enfant of lien.children">
+        <a [routerLink]="enfant.url">{{enfant.title}}</a>
+      </li>
+    </ul>
+  </li>
 </ul>
