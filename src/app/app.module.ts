@@ -17,6 +17,8 @@ import { TotimePipe } from './shared/totime.pipe';
 import { HighlightDirective } from './shared/highlight.directive';
 import { Demo4Component } from './demo/demo4/demo4.component';
 import { EnfantComponent } from './demo/demo4/enfant/enfant.component';
+import { Exo2Component } from './exercices/exo2/exo2.component';
+import { ListeComponent } from './exercices/exo2/liste/liste.component';
 
 
 
@@ -36,7 +38,9 @@ import { EnfantComponent } from './demo/demo4/enfant/enfant.component';
     TotimePipe,
     HighlightDirective,
     Demo4Component,
-    EnfantComponent
+    EnfantComponent,
+    Exo2Component,
+    ListeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,5 @@
+<h3>Shopping List</h3>
+<p>Nouvel article : <input type="text" [(ngModel)]="newArticle" /></p>
+<button (click)="ajoutArticle()">Ajouter</button>
+
+<app-liste [liste]="listeArticle" (deleteEvent)="supprimerArticle($event)"></app-liste>

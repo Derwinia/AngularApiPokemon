@@ -1,0 +1,8 @@
+<div style="border : 1px dashed black;">
+<h4>Liste des articles</h4>
+<ul>
+  <li *ngFor="let a of liste; let i = index;">
+    {{a}} <button (click)="deleteArticle(i)">-X-</button>
+  </li>
+</ul>
+</div>

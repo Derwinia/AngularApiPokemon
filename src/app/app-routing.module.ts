@@ -8,6 +8,7 @@ import { Demo2Component } from './demo/demo2/demo2.component';
 import { ExercicesComponent } from './exercices/exercices.component';
 import { Demo3Component } from './demo/demo3/demo3.component';
 import { Demo4Component } from './demo/demo4/demo4.component';
+import { Exo2Component } from './exercices/exo2/exo2.component';
 
 const routes: Routes = [
   {path : 'home', component : HomeComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
     {path : 'demo4', component : Demo4Component},
   ]},
   {path : 'exercice', component : ExercicesComponent, children :[
-    {path : 'exo1', component : Exo1Component}
+    {path : 'exo1', component : Exo1Component},
+    {path : 'exo2', component : Exo2Component},
   ]}
 ];
 
