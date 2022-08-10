@@ -19,6 +19,7 @@ import { Demo4Component } from './demo/demo4/demo4.component';
 import { EnfantComponent } from './demo/demo4/enfant/enfant.component';
 import { Exo2Component } from './exercices/exo2/exo2.component';
 import { ListeComponent } from './exercices/exo2/liste/liste.component';
+import { Demo5Component } from './demo/demo5/demo5.component';
 
 
 
@@ -40,7 +41,8 @@ import { ListeComponent } from './exercices/exo2/liste/liste.component';
     Demo4Component,
     EnfantComponent,
     Exo2Component,
-    ListeComponent
+    ListeComponent,
+    Demo5Component
   ],
   imports: [
     BrowserModule,

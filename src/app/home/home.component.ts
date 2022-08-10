@@ -1,3 +1,4 @@
+import { FakeauthService } from './../demo/demo5/fakeauth.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -15,13 +16,15 @@ export class HomeComponent implements OnInit {
   monClient : Client = {id : 1, name : "marcel"}
 
 
-  constructor() {
+  isAuth! : boolean
+
+  constructor(
+    private authService : FakeauthService
+  ) {
    }
 
   ngOnInit(): void {
-    for(let i = 0; i < 10; i++) {
-      console.log(i);
-    }
+    this.isAuth = this.authService.isAuth
   }
 
 }

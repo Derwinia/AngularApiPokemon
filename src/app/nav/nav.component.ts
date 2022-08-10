@@ -20,6 +20,7 @@ export class NavComponent implements OnInit {
         {title : "Pipes", url : "demo/demo2"},
         {title : "Directives", url : "demo/demo3"},
         {title : "@Input/@Output", url : "demo/demo4"},
+        {title : "Services et injection", url : "demo/demo5"},
       ]},
       {title : "Exercices", children : [
         {title : "Chronomètre", url : "exercice/exo1"},
