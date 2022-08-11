@@ -1,0 +1,17 @@
+<h3>Shopping list ++</h3>
+<p>
+  Nouvel Article : <input type="text" [(ngModel)]="newArticle" />
+   &nbsp; <button (click)="ajouter()">+</button>
+</p>
+
+<div>
+  <h4>Liste d'article</h4>
+  <ul>
+    <li *ngFor="let a of localArticleList; let i = index;">
+      {{a.quantite}} - {{a.nom}} ||
+      <button (click)="plusUn(i)">+</button> &nbsp;
+      <button (click)="moinsUn(i)">-</button> &nbsp;
+      <button (click)="retirer(i)">-X-</button>
+    </li>
+  </ul>
+</div>
