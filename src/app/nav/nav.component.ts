@@ -21,6 +21,9 @@ export class NavComponent implements OnInit {
         {title : "Directives", url : "demo/demo3"},
         {title : "@Input/@Output", url : "demo/demo4"},
         {title : "Services et injection", url : "demo/demo5"},
+        {title : "Reactive forms", url : "demo/demo6"},
+        {title : "Routing", url : "demo/demo7"},
+        {title : "Guard", url : "demo/demo8"},
       ]},
       {title : "Exercices", children : [
         {title : "Chronomètre", url : "exercice/exo1"},

@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { Demo1Component } from './demo/demo1/demo1.component';
 import { Demo2Component } from './demo/demo2/demo2.component';
 import { Demo3Component } from './demo/demo3/demo3.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DemoComponent } from './demo/demo.component';
 import { NavComponent } from './nav/nav.component';
 import { EurtobtcPipe } from './shared/eurtobtc.pipe';
@@ -21,6 +21,11 @@ import { Exo2Component } from './exercices/exo2/exo2.component';
 import { ListeComponent } from './exercices/exo2/liste/liste.component';
 import { Demo5Component } from './demo/demo5/demo5.component';
 import { Exo3Component } from './exercices/exo3/exo3.component';
+import { Demo6Component } from './demo/demo6/demo6.component';
+import { FourofourComponent } from './fourofour/fourofour.component';
+import { Demo7Component } from './demo/demo7/demo7.component';
+import { TargetComponent } from './demo/demo7/target/target.component';
+import { Demo8Component } from './demo/demo8/demo8.component';
 
 
 
@@ -44,12 +49,18 @@ import { Exo3Component } from './exercices/exo3/exo3.component';
     Exo2Component,
     ListeComponent,
     Demo5Component,
-    Exo3Component
+    Exo3Component,
+    Demo6Component,
+    FourofourComponent,
+    Demo7Component,
+    TargetComponent,
+    Demo8Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

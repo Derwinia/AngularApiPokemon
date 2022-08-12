@@ -1,0 +1,19 @@
+<h3>Reactive forms</h3>
+<form [formGroup]="fg" (ngSubmit)="validForm()">
+  <p>Nom * : <input type="text" formControlName="nom"></p>
+  <p *ngIf="fg.controls['nom'].invalid && fg.controls['nom'].touched" style="color : red;">
+    {{fg.controls['nom'].errors["myError"]}}
+  </p>
+  <p>Date naissance : <input type="date" formControlName="datenaiss"></p>
+  <p>Email : <input type="email" formControlName="email"></p>
+  <hr />
+
+  <h4>Telephone : <button type="button" (click)="addTel()">+</button></h4>
+  <div formArrayName="tel">
+    <p *ngFor="let champ of getTelArray().controls; let i = index;">
+      <input type="phone" [formControlName]="i" >
+    </p>
+  </div>
+
+  <p><button type="submit" [disabled]="fg.invalid">Valider</button></p>
+</form>
