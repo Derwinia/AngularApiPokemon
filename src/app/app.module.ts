@@ -27,7 +27,8 @@ import { Demo7Component } from './demo/demo7/demo7.component';
 import { TargetComponent } from './demo/demo7/target/target.component';
 import { Demo8Component } from './demo/demo8/demo8.component';
 
-
+import { HttpClientModule } from '@angular/common/http';
+import { Demo9Component } from './demo/demo9/demo9.component';
 
 
 @NgModule({
@@ -54,13 +55,15 @@ import { Demo8Component } from './demo/demo8/demo8.component';
     FourofourComponent,
     Demo7Component,
     TargetComponent,
-    Demo8Component
+    Demo8Component,
+    Demo9Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

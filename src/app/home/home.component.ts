@@ -16,7 +16,15 @@ export class HomeComponent implements OnInit {
   monClient : Client = {id : 1, name : "marcel"}
 
 
-  isAuth! : boolean
+  private _isAuth! : boolean
+
+  get isAuth() : boolean {
+    return JSON.parse(localStorage.getItem("isAuth"))
+  }
+
+  set isAuth(value: boolean) {
+    this._isAuth = value
+  }
 
   constructor(
     private authService : FakeauthService
@@ -24,7 +32,6 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.isAuth = this.authService.isAuth
   }
 
 }

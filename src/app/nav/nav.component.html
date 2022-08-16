@@ -10,6 +10,7 @@
   <li><a routerLink="exercice/exo1">Chronomètre</a></li>
 </ul> -->
 
+<p *ngIf="localIsAuth">Bonjour marcel</p>
 
 <ul>
   <li *ngFor="let lien of mesLiens; let i = index;">

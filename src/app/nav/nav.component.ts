@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FakeauthService } from '../demo/demo5/fakeauth.service';
 import { Link } from '../models/link.model';
 
 @Component({
@@ -10,9 +11,17 @@ export class NavComponent implements OnInit {
 
   mesLiens! : Link[]
 
-  constructor() { }
+  localIsAuth : boolean
+  constructor(
+    private authService : FakeauthService
+  ) { }
 
   ngOnInit(): void {
+    this.authService.isAuthSubject.subscribe({
+      next : (data : boolean) => { this.localIsAuth = data} ,
+      error : () => {} ,
+      complete : () => {}
+    })
     this.mesLiens = [
       {title : "Home", url : "home"},
       {title : "Demos", children : [
@@ -24,6 +33,7 @@ export class NavComponent implements OnInit {
         {title : "Reactive forms", url : "demo/demo6"},
         {title : "Routing", url : "demo/demo7"},
         {title : "Guard", url : "demo/demo8"},
+        {title : "Conso api", url : 'demo/demo9'}
       ]},
       {title : "Exercices", children : [
         {title : "Chronomètre", url : "exercice/exo1"},
