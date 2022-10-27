@@ -26,9 +26,9 @@ import { FourofourComponent } from './fourofour/fourofour.component';
 import { Demo7Component } from './demo/demo7/demo7.component';
 import { TargetComponent } from './demo/demo7/target/target.component';
 import { Demo8Component } from './demo/demo8/demo8.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { Demo9Component } from './demo/demo9/demo9.component';
+import { PokeAPIComponent } from './poke-api/poke-api.component';
 
 
 @NgModule({
@@ -56,7 +56,8 @@ import { Demo9Component } from './demo/demo9/demo9.component';
     Demo7Component,
     TargetComponent,
     Demo8Component,
-    Demo9Component
+    Demo9Component,
+    PokeAPIComponent
   ],
   imports: [
     BrowserModule,

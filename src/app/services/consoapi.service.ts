@@ -7,13 +7,16 @@ import { Observable } from 'rxjs';
 })
 export class ConsoapiService {
 
-  url : string = "https://pokeapi.co/api/v2/pokemon/"
-
   constructor(
     private client : HttpClient
   ) { }
 
-  get() : Observable<any> {
-    return this.client.get<any>(this.url)
+  getPokemons(id:number){
+    return this.client.get(`https://pokeapi.co/api/v2/pokemon/?limit=20&offset=${id}`)
   }
+
+  getPokemon(url:string){
+    return this.client.get(url)
+  }
+
 }

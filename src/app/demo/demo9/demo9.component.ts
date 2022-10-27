@@ -13,7 +13,7 @@ export class Demo9Component implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.service.get().subscribe({
+    this.service.getPokemons(0).subscribe({
       next : (data : any) => console.log(data),
       error : (error) => console.log(error)
     })

@@ -18,6 +18,7 @@ import { TargetComponent } from './demo/demo7/target/target.component';
 import { Demo8Component } from './demo/demo8/demo8.component';
 import { AuthguardGuard } from './shared/authguard.guard';
 import { Demo9Component } from './demo/demo9/demo9.component';
+import { PokeAPIComponent } from './poke-api/poke-api.component';
 
 const routes: Routes = [
   {path : '', redirectTo : 'home', pathMatch : 'full'},
@@ -33,13 +34,13 @@ const routes: Routes = [
     {path : 'target/:id/:truc', component : TargetComponent},
     {path : 'demo8', canActivate : [AuthguardGuard], component : Demo8Component},
     {path : 'demo9', component : Demo9Component}
-
   ]},
   {path : 'exercice', component : ExercicesComponent, children :[
     {path : 'exo1', component : Exo1Component},
     {path : 'exo2', component : Exo2Component},
     {path : 'exo3', component : Exo3Component},
   ]},
+  {path : 'pokeAPI', component : PokeAPIComponent},
   {path : '404', component : FourofourComponent},
   {path : '**', redirectTo : '404'}
 ];

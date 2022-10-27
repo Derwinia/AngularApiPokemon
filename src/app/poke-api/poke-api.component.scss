@@ -1,0 +1,93 @@
+.content{
+  width: 100%;
+  height: auto;
+}
+
+.listPokemon{
+  padding-top: 3px;
+  position: absolute;
+  width: 20%;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5em;
+  border-color: black;
+  background-color:rgba(46, 90, 223, 0.79);
+}
+
+.listPokemon > ul{
+  list-style: none;
+  columns: 2;
+  padding: 0;
+}
+
+.listPokemon > ul > li{
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.listPokemon > ul > li > button{
+  border-style: double;
+  border-radius: 10em;
+  text-align: center;
+  font-size: large;
+  border-color: black;
+  background-color:rgb(212, 212, 212);
+}
+
+.detailPokemon{
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5em;
+  border-color: black;
+  background-color:rgb(31, 196, 155);
+}
+
+.type{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+.detailPokemon > ul > li{
+height: 20px;
+}
+
+.detailPokemon > ul > li >p{
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  }
+
+.images{
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.image{
+  width: 200px;
+  height: 200px;
+}
+
+.divbutton{
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.button{
+  text-align: center;
+  font-size: large;
+  border-style: solid;
+  border-radius: 10em;
+  border-width: 2px;
+  border-color: rgb(0, 0, 0);
+  background-color:rgb(255, 62, 62);
+}

@@ -1,0 +1,41 @@
+<div class="content">
+  <div class="listPokemon">
+    <ul>
+      <li *ngFor="let pokemons of listPokemon.results">
+        <button (click)="changeView(pokemons.url)">{{pokemons.name}}</button>
+      </li>
+    </ul>
+    <p class="divbutton">
+      <button class="button" (click)="loadOther(this.listPokemon.previous)" [disabled]="listPokemon.previous == null"><== Previous</button>
+      <button class="button" (click)="loadOther(this.listPokemon.next)" [disabled]="listPokemon.next == null">Next ==></button>
+    </p>
+  </div>
+  <div class="detailPokemon" *ngIf="pokemon">
+    <div class="images">
+      <img class="image" [src]="pokemon.sprites.front_default">
+      <img class="image" [src]="pokemon.sprites.other['official-artwork'].front_default">
+      <img class="image" [src]="pokemon.sprites.back_default">
+    </div>
+    <div>
+      <ul>
+        <li>
+          nom : {{pokemon.name}}
+        </li>
+        <li>
+          taille : {{pokemon.height}}
+        </li>
+        <li>
+          poids : {{pokemon.weight}}
+        </li>
+        <li class="type">
+          <p>type(s) : </p>
+          <p *ngFor="let type of pokemon.types;let i = index">&nbsp;{{type.type.name}} <em
+              *ngIf="i==0 && pokemon.types.length >1">-</em></p>
+        </li>
+        <li *ngFor="let statistique of pokemon.stats; let i = index;">
+          {{statistique.stat.name}} : {{statistique.base_stat}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
